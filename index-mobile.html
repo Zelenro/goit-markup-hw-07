@@ -18,13 +18,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles-mobile.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
     <!-- /* /=====================** Header **=====================/ */ -->
     <section>
       <header>
-        <div class="nav">
-          <nav>
+            <nav>
+            <div class="nav">
+            <div class="nav-main">
             <a class="link" href="./index.html"
               ><span class="logo-web">WEB</span
               ><span class="logo-studio">STUDIO</span></a
@@ -44,12 +46,6 @@
             </ul>
           </nav>
 
-          <button type="button" class="button mobile-menu-open">
-            <svg class="icon-menu-hamburger">
-              <use href="./images/icons.svg#icon-menu-hamburger"></use>
-            </svg>
-          </button>
-
           <address class="address-section">
             <div class="contact-block">
               <ul class="link contact-list">
@@ -65,7 +61,22 @@
                 </li>
               </ul>
             </div>
-          </address>
+          </address></div>
+
+          <button type="button" class="button mobile-menu-open">
+            <svg class="icon-menu-hamburger" width="32px" height="22px">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <div class="mobile-menu-container">
+              <button type="button" class="close-menu-btn" data-modal-close>
+                <svg class="close-menu-btn-icon" width="8px" height="8px">
+                  <use href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </header>
     </section>
