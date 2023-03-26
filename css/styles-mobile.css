@@ -105,8 +105,8 @@ img {
     }
 
     .mobile-menu-open {
-        display: none;
-        background-color: transparent;
+        /* display: none; */
+        /* background-color: transparent; */
     }
 }
 
@@ -119,9 +119,8 @@ img {
 
 
 .icon-menu-hamburger {
-    fill: #2E2F42;
-    color: yellow;
-    background-color: #404BBF;
+    stroke: #2E2F42;
+
 }
 
 
