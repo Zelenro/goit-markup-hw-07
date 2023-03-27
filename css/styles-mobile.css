@@ -67,7 +67,6 @@ img {
 .header-container {
     display: flex;
     position: relative;
-
     align-items: center;
     line-height: 0;
     border-bottom: 1px solid #E7E9FC;
@@ -254,15 +253,15 @@ img {
 
 
     .nav-address-wrap {
-        /* display: none; */
+        display: none;
     }
 
     .contact-block {
-        /* display: none; */
+        display: none;
     }
 
     .menu-btn-wrap {
-        /* display: block; */
+        display: block;
     }
 }
 
@@ -280,15 +279,15 @@ img {
     }
 
     .nav-address-wrap {
-        /* display: block; */
+        display: block;
     }
 
     .contact-block {
-        /* display: block; */
+        display: block;
     }
 
     .menu-btn-wrap {
-        /* display: none; */
+        display: none;
     }
 
     .logo {
