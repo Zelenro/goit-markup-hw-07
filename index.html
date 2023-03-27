@@ -17,49 +17,73 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-mobile.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
     <!-- /* /=====================** Header **=====================/ */ -->
     <section>
       <header>
-        <nav>
-          <div class="nav">
-            <a class="link" href="./index.html"
-              ><span class="logo-web">WEB</span
-              ><span class="logo-studio">STUDIO</span></a
-            >
-            <ul class="link header-navigation">
-              <li class="item-navigation">
-                <a class="navigation current-line" href="./index.html"
-                  >Studio</a
-                >
-              </li>
-              <li class="item-navigation">
-                <a class="navigation" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="item-navigation">
-                <a class="navigation" href="">Contacts</a>
-              </li>
-            </ul>
-            <address class="address-section">
-              <div class="contact-block">
-                <ul class="link contact-list">
-                  <li class="contact-item">
-                    <a class="contact" href="mailto:info@devstudio.com"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                  <li class="contact-item">
-                    <a class="contact" href="tel:+110001111111"
-                      >+11 (000) 111-11-11</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </address>
+        <div class="header-container">
+          <nav class="nav-main">
+            <div class="logo">
+              <a class="link" href="./index.html"
+                ><span class="logo-web">WEB</span
+                ><span class="logo-studio">STUDIO</span></a
+              >
+            </div>
+            <div class="nav-address-wrap">
+              <ul class="link header-navigation">
+                <li class="item-navigation">
+                  <a class="navigation current-line" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="item-navigation">
+                  <a class="navigation" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="item-navigation">
+                  <a class="navigation" href="./mobile.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <address>
+            <div class="contact-block">
+              <ul class="link contact-list">
+                <li class="contact-item">
+                  <a class="contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <a class="contact" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </address>
+
+          <div class="menu-btn-wrap">
+            <div class="menu-open-container">
+              <button type="button" class="button mobile-menu-open">
+                <svg class="icon-menu-hamburger" width="32px" height="22px">
+                  <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="menu-close-container">
+              <button type="button" class="mobile-menu-close" data-modal-close>
+                <svg class="close-menu-btn-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-        </nav>
+        </div>
       </header>
     </section>
 
