@@ -79,7 +79,7 @@ img {
 
 .nav-main {
     /* display: flex; */
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 .header-navigation {
@@ -93,32 +93,42 @@ img {
 }
 
 .menu-btn-wrap {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    right: 0;
+    right: 0; */
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    display: block;
 }
 
+.mobile-menu-open {}
+
+.mobile-menu-close {}
 
 .menu-open-container {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     margin-left: auto;
     background-color: transparent;
     border: none;
-    padding: 0;
-    line-height: 0;
+    padding-top: 24px;
+    /* padding: 0; */
+    /* line-height: 0; */
+    /* align-items: center; */
+
 }
 
 .menu-close-container {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     margin-left: auto;
     background-color: transparent;
     border: none;
     padding: 0;
-    line-height: 0;
+    line-height: 0; */
 
 }
 
