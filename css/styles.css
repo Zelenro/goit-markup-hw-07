@@ -108,6 +108,8 @@ img {
 }
 
 .navigation {
+    position: relative;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -138,9 +140,11 @@ img {
     width: 100%;
     height: 4px;
     left: 0;
+    /* bottom: 0; */
     top: 42px;
+
     position: absolute;
-    display: block;
+    display: inline-block;
     background-color: #404BBF;
     border-radius: 2px;
 }
@@ -152,7 +156,7 @@ img {
 
 
 .contact-block {
-    /* margin-left: 332px; */
+    padding-top: 16px;
 }
 
 .address-section {
@@ -160,12 +164,11 @@ img {
 }
 
 .contact {
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-text-address);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -274,6 +277,62 @@ img {
     background-color: var(--color-button-hover);
 }
 
+/* /=====================** Features **=====================/ */
+
+.section-features {
+    /* width: 1158px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 120px; */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+}
+
+.features-list {
+    /* display: flex; */
+}
+
+.features-box {
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.title-features {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-text-title);
+}
+
+.features-item {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.features-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ======================================== MEDIA ====================================== */
 
@@ -284,8 +343,6 @@ img {
         width: 320px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 24px;
-        padding-bottom: 22px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -304,7 +361,6 @@ img {
         margin-left: auto;
     }
 
-
     .hero {
         width: 428px;
         height: 432px;
@@ -320,6 +376,22 @@ img {
         line-height: 1.11;
         letter-spacing: 0.02em;
         max-width: 320px;
+    }
+
+    .section-features {
+        width: 428px;
+    }
+
+    .features-box {
+        display: none;
+    }
+
+    .title-features {
+        text-align: center;
+    }
+
+    .text-features {
+        text-align: center;
     }
 
 }
@@ -356,6 +428,10 @@ img {
         margin-right: 120px;
     }
 
+    .contact-list {
+        font-style: normal;
+    }
+
     .contact-item {
         margin-bottom: 12px;
     }
@@ -372,8 +448,6 @@ img {
         max-width: 496px;
     }
 
-
-
 }
 
 /* ================================ Desctop ======================================= */
@@ -385,6 +459,13 @@ img {
 
     .logo {
         margin-right: 76px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .header-navigation {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .contact-list {
@@ -422,20 +503,5 @@ img {
         margin-right: auto;
         margin-top: 48px;
         padding: 16px 32px;
-
-
-
     }
-
-
-
-}
-
-
-
-
-
-
-.header-navigation {
-    /* display: block; */
 }
