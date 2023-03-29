@@ -832,6 +832,8 @@ footer {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 16px;
+        justify-content: center;
+
     }
 
     .customers-organisation {
@@ -868,6 +870,11 @@ footer {
         display: flex;
         justify-content: center;
         margin-bottom: 17px;
+    }
+
+    .media-list {
+        background-color: #4D5AE5;
+        ;
     }
 
     .social-media-list {
@@ -973,27 +980,20 @@ footer {
         column-gap: 24px;
 
         justify-content: space-between;
-        /* padding-left: 16px; */
-        /* padding-right: 16px; */
+
     }
 
     .features-item {
         width: 350px;
-        /* display: flex; */
-        /* justify-content: space-evenly; */
-        /* flex-wrap: wrap; */
-        /* row-gap: 72px; */
-        /* column-gap: 16px; */
+
     }
 
     .features-box {
         display: none;
     }
 
-
     .features-item:not(:last-child) {
         margin-bottom: 0px;
-        /* margin-right: 24px; */
     }
 
     .features-icon {
@@ -1003,11 +1003,6 @@ footer {
     .features-item {
         margin: 0;
         padding: 0;
-        /* display: flex; */
-        /* justify-content: space-evenly; */
-        /* flex-wrap: wrap; */
-        /* row-gap: 72px; */
-        /* column-gap: 16px; */
     }
 
     .title-features {
@@ -1057,11 +1052,111 @@ footer {
         margin-bottom: 0px;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Customers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .customers-block {
+        width: 768px;
+
+    }
+
+    .customers-list {
+
+        column-gap: 24px;
+    }
+
+    .customers-organisation {
+        margin: 0;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
+    .footer {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+        justify-content: start;
+        padding-bottom: 96px;
+        padding-left: 108px;
+    }
 
+    .footer-logo {
+        /* margin-right: 50px; */
+        /* margin: 0; */
+    }
+
+    .social-media-block {
+        margin-bottom: 0px;
+    }
+
+    .footer-logo-link {
+        /* display: flex; */
+        /* margin-bottom: 17px; */
+        /* justify-content: center; */
+    }
+
+    .footer-text {
+        margin: 0;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* margin-bottom: 72px; */
+    }
+
+    .social-media {
+        justify-content: flex-start;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* margin-bottom: 17px; */
+    }
+
+    .social-media-list {
+        /* justify-content: center; */
+    }
+
+    .form-subscribe-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+        justify-content: center;
+        padding-bottom: 0px;
+        align-items: flex-end
+    }
+
+    .subscribe-block {}
+
+    .form-subscribe {
+        /* display: flex; */
+        justify-content: start;
+    }
+
+    .form-subscribe-email {
+        /* display: block; */
+        width: 264px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .subscribe-form {
+        /* width: 100%; */
+        /* padding: 8px 16px; */
+    }
+
+    .subscribe-btn {
+        justify-content: start;
+        /* margin: 0; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+    }
 
 }
+
+
 
 
 
