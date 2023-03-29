@@ -1466,9 +1466,9 @@ footer {
         /* margin-left: auto; */
         /* margin-right: auto; */
         width: 1158px;
-        /* height: 310px; */
-        padding-top: 100px;
-        padding-bottom: 100px;
+
+        padding-top: 120px;
+        padding-bottom: 120px;
         padding-left: 0;
         padding-right: 0;
         display: flex;
@@ -1544,10 +1544,6 @@ footer {
         flex-basis: calc((100% - 48px) / 4);
     }
 
-    .media-list:not(:last-child) {
-        /* margin-right: 16px; */
-    }
-
 
     .media-list {
         box-sizing: border-box;
@@ -1588,7 +1584,6 @@ footer {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-
     }
 
     .subscribe-form {
@@ -1645,7 +1640,5 @@ footer {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-
 
 }
