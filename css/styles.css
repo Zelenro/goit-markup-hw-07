@@ -753,7 +753,7 @@ footer {
         padding-top: 112px;
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/480.jpg");
-        margin-bottom: 96px;
+        /* margin-bottom: 96px; */
     }
 
     .hero-title {
@@ -768,7 +768,7 @@ footer {
 
     .section-features {
         width: 428px;
-        margin-bottom: 96px;
+        /* margin-bottom: 96px; */
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -923,13 +923,10 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tablet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media screen and (min-width: 768px) {
@@ -983,7 +980,6 @@ footer {
 
     .section-features {
         width: 768px;
-        margin-bottom: 96px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -993,14 +989,11 @@ footer {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-
         justify-content: space-between;
-
     }
 
     .features-item {
         width: 350px;
-
     }
 
     .features-box {
@@ -1026,7 +1019,6 @@ footer {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
-
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
@@ -1042,7 +1034,6 @@ footer {
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Team @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
 
     .team-block {
         width: 768px;
@@ -1071,11 +1062,9 @@ footer {
 
     .customers-block {
         width: 768px;
-
     }
 
     .customers-list {
-
         column-gap: 24px;
     }
 
@@ -1097,39 +1086,16 @@ footer {
         padding-left: 108px;
     }
 
-    .footer-logo {
-        /* margin-right: 50px; */
-        /* margin: 0; */
-    }
-
     .social-media-block {
         margin-bottom: 0px;
     }
 
-    .footer-logo-link {
-        /* display: flex; */
-        /* margin-bottom: 17px; */
-        /* justify-content: center; */
-    }
-
     .footer-text {
         margin: 0;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* margin-bottom: 72px; */
     }
 
     .social-media {
         justify-content: flex-start;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* margin-bottom: 17px; */
-    }
-
-    .social-media-list {
-        /* justify-content: center; */
     }
 
     .form-subscribe-wrapper {
@@ -1142,42 +1108,25 @@ footer {
         align-items: flex-end
     }
 
-    .subscribe-block {}
-
     .form-subscribe {
-        /* display: flex; */
         justify-content: start;
     }
 
     .form-subscribe-email {
-        /* display: block; */
         width: 264px;
         padding-left: 0px;
         padding-right: 0px;
         margin-bottom: 0px;
     }
 
-    .subscribe-form {
-        /* width: 100%; */
-        /* padding: 8px 16px; */
-    }
-
     .subscribe-btn {
         justify-content: start;
-        /* margin: 0; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
     }
-
 }
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Desctop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-
-
-
-/* ========================================== Desctop ======================================= */
-
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Features @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media screen and (min-width: 1200px) {
     .header-container {
@@ -1203,12 +1152,14 @@ footer {
         margin-right: 40px;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Hero @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     .hero {
         width: 1440px;
         height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
+        /* margin-bottom: 120px; */
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.jpg");
     }
 
@@ -1231,4 +1182,470 @@ footer {
         margin-top: 48px;
         padding: 16px 32px;
     }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Features @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .section-features {
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .features-box {
+        display: block;
+        width: 264px;
+        height: 112px;
+        background: #F4F4FD;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .features-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .features-icon {
+        display: block;
+    }
+
+
+    .title-features {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-bottom: 8px;
+    }
+
+    .team-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--color-text-title);
+    }
+
+    .features-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .features-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Work @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .section-work {
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .work-list {
+        display: flex;
+    }
+
+    .title-job {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--color-text-title);
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    .work-item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Team @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .team-section {
+        background-color: #F4F4FD;
+        /* align-items: center; */
+    }
+
+    .team-block {
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .team-title {
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    .team-block-list {
+        flex-wrap: nowrap;
+    }
+
+    .team-item {
+        background: #FFFFFF;
+        box-shadow:
+            0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .team-foto-block {
+        display: block;
+    }
+
+    .team-item:not(:last-child) {
+        /* margin-right: 24px; */
+    }
+
+    .team-foto-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+
+    .team-skill {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #434455;
+        margin-bottom: 8px;
+    }
+
+    .team-connect-block {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 32px;
+    }
+
+    .team-connect-list {
+        display: flex;
+    }
+
+    .team-connect-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4D5AE5;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        cursor: pointer;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .team-connect-item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .team-connect-icon {
+        display: block;
+        fill: #FFFFFF;
+    }
+
+    .team-connect-item:hover,
+    .team-connect-item:focus {
+        background-color: #404BBF;
+    }
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Customers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+    .customers-block {
+        width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .customers-title {
+        text-align: center;
+        margin-bottom: 72px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+
+    .customers-list {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        /* gap: 24px; */
+        /* flex-basis: calc((100% - 120px) / 6); */
+    }
+
+    .customers-organisation {
+        display: flex;
+        height: 88px;
+        width: 168px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        cursor: pointer;
+
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .customers-svg {
+        width: 104px;
+        height: 56px;
+        fill: #AFB1B8;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .customers-organisation:hover,
+    .customers-organisation:focus {
+        border-color: #404BBF;
+    }
+
+    .customers-organisation:hover .customers-svg,
+    .customers-organisation:focus .customers-svg {
+        fill: #404BBF;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    footer {
+        background-color: #2E2F42;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .footer {
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        width: 1158px;
+        /* height: 310px; */
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .footer-list {
+        display: flex;
+        padding-top: 120px;
+        margin: 0;
+    }
+
+    .footer-logo {
+        margin-right: 72px;
+    }
+
+    .footer-logo-link {
+        display: flex;
+        justify-content: start;
+    }
+
+    .footrer-logo-web {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #4D5AE5;
+    }
+
+    .footrer-logo-studio {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #F4F4FD;
+    }
+
+    .footer-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-text-foter);
+        margin-top: 16px;
+        width: 264px;
+    }
+
+    .social-media-block {
+        margin-right: 80px;
+    }
+
+    .social-media-list {
+        display: flex;
+    }
+
+    .social-media {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+
+    .social-media-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+        flex-basis: calc((100% - 48px) / 4);
+    }
+
+    .media-list:not(:last-child) {
+        /* margin-right: 16px; */
+    }
+
+
+    .media-list {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4D5AE5;
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .media-list:hover,
+    .media-list:focus {
+        background-color: #31D0AA;
+        fill: #404BBF;
+    }
+
+    .footer-icon {
+        justify-content: center;
+        align-items: center;
+        fill: #FFFFFF;
+    }
+
+    .form-subscribe-wrapper {
+        display: flex;
+        align-items: normal;
+    }
+
+    .form-subscribe {
+        display: block;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+
+    }
+
+    .subscribe-form {
+        display: block;
+        outline: none;
+        width: 264px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-right: 24px;
+        border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-left: 16px;
+
+    }
+
+    .subscribe-icon-wrapper {
+        position: relative;
+    }
+
+    .subscribe-icon {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(0, -50%);
+        fill: #FFFFFF;
+    }
+
+    .subscribe-btn {
+        width: 165px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background-color: #4D5AE5;
+        border-radius: 4px;
+        border: transparent;
+        margin: 40px 0px 0px 0px;
+        padding-left: 24px;
+    }
+
+    .subscribe-btn:hover,
+    .subscribe-btn:focus {
+        background-color: var(--color-button-hover);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+
 }
