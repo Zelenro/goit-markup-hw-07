@@ -649,7 +649,7 @@ footer {
 
 
 .form-subscribe-wrapper {
-    display: flex;
+    display: block;
 }
 
 .form-subscribe {
@@ -719,19 +719,16 @@ footer {
 }
 
 
-/* ======================================== MEDIA ====================================== */
+/* ======================================== MEDIA SCREEN ==================================== */
 
-/* ================================ Small ======================================= */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
     .header-container {
-        width: 320px;
+        width: 428px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 16px;
-        padding-right: 16px;
     }
-
 
     .nav-address-wrap {
         display: none;
@@ -792,7 +789,6 @@ footer {
 
     .text-features {
         text-align: left;
-        /* padding-bottom: 72px; */
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -802,7 +798,6 @@ footer {
 
     .section-work {
         display: none;
-
     }
 
     .team-block {
@@ -811,15 +806,12 @@ footer {
         padding-right: 16px;
         padding-bottom: 96px;
         padding-top: 96px;
-
     }
 
     .team-block-list {
         margin-left: auto;
         margin-right: auto;
         max-width: 264px;
-        /* align-content: center; */
-
     }
 
     .team-item:not(:last-child) {
@@ -840,7 +832,6 @@ footer {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 16px;
-
     }
 
     .customers-organisation {
@@ -873,7 +864,6 @@ footer {
         margin-bottom: 72px;
     }
 
-
     .social-media {
         display: flex;
         justify-content: center;
@@ -882,57 +872,50 @@ footer {
 
     .social-media-list {
         justify-content: center;
-        /* padding-bottom: 120px; */
     }
 
     .form-subscribe-wrapper {
-        width: 428px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 100px;
+        padding-bottom: 96px;
     }
 
-    .subscribe-block {
-        display: block;
-    }
+    .subscribe-block {}
 
     .form-subscribe {
-        /* width: 428px; */
-        margin: 0;
-        padding: 0;
-        box-sizing: content-box;
-
-
-
         display: flex;
         justify-content: center;
     }
 
     .form-subscribe-email {
         display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 16px;
+    }
+
+    .subscribe-form {
         width: 100%;
+        padding: 8px 16px;
     }
 
+    .subscribe-btn {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
-/* ================================ Mobile ======================================= */
 
-@media screen and (min-width: 480px) {
-    .header-container {
-        width: 428px;
-    }
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tablet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-
-}
-
-/* ================================ Tablet ======================================= */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media screen and (min-width: 768px) {
     .header-container {
         width: 736px;
         justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .nav-address-wrap {
@@ -959,6 +942,8 @@ footer {
         margin-bottom: 12px;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Hero @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     .hero {
         width: 736px;
         height: 436px;
@@ -971,9 +956,118 @@ footer {
         max-width: 496px;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Features @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+    .section-features {
+        width: 768px;
+        margin-bottom: 96px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+
+        justify-content: space-between;
+        /* padding-left: 16px; */
+        /* padding-right: 16px; */
+    }
+
+    .features-item {
+        width: 350px;
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* flex-wrap: wrap; */
+        /* row-gap: 72px; */
+        /* column-gap: 16px; */
+    }
+
+    .features-box {
+        display: none;
+    }
+
+
+    .features-item:not(:last-child) {
+        margin-bottom: 0px;
+        /* margin-right: 24px; */
+    }
+
+    .features-icon {
+        display: none;
+    }
+
+    .features-item {
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* flex-wrap: wrap; */
+        /* row-gap: 72px; */
+        /* column-gap: 16px; */
+    }
+
+    .title-features {
+        text-align: left;
+        padding-bottom: 8px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+
+    .text-features {
+        text-align: left;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Team @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+    .team-block {
+        width: 768px;
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
+
+    .team-block-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+        justify-content: center;
+        max-width: 768px;
+    }
+
+    .team-item {
+        width: 264px;
+    }
+
+    .team-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+
+
+
+
 }
 
-/* ================================ Desctop ======================================= */
+
+
+/* ========================================== Desctop ======================================= */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Features @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media screen and (min-width: 1200px) {
     .header-container {
