@@ -79,36 +79,6 @@
                 <use href="./images/icons.svg#icon-menu-hamburger"></use>
               </svg>
             </button>
-            <ul class="menu" hidden mobileMenu>
-              <li>
-                <a
-                  href="https://goitacademy.github.io/mobile-menu-workshop/"
-                  class="link"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://goitacademy.github.io/mobile-menu-workshop/"
-                  class="link"
-                  >Products</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://goitacademy.github.io/mobile-menu-workshop/"
-                  class="link"
-                  >Contacts</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://goitacademy.github.io/mobile-menu-workshop/"
-                  class="link"
-                  >Career</a
-                >
-              </li>
-            </ul>
           </div>
 
           <div class="menu-close-container">
@@ -116,6 +86,17 @@
               <svg class="close-menu-btn-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-close-menu"></use>
               </svg>
+              <ul class="menu" is-hidden mobileMenu>
+                <li>
+                  <a href="./index.html" class="link">Studio</a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="link">Portfolio</a>
+                </li>
+                <li>
+                  <a href="" class="link">Contacts</a>
+                </li>
+              </ul>
             </button>
           </div>
         </div>
@@ -719,6 +700,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

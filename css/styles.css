@@ -97,7 +97,9 @@ img {
     stroke: #2E2F42;
 }
 
-.nav-address-wrap {}
+.nav-address-wrap {
+    /* position: relative; */
+}
 
 .nav-main {
     display: flex;
@@ -186,7 +188,11 @@ img {
 
 
 .menu-btn-wrap {
-    position: relative;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    width: 100%;
+
 }
 
 .mobile-menu-open {}
@@ -194,7 +200,7 @@ img {
 .mobile-menu-close {}
 
 .mobile-menu-open {
-    position: absolute;
+    /* position: fixed; */
     top: 50%;
     transform: translate(0, -50%);
     right: 0;
@@ -209,7 +215,7 @@ img {
 }
 
 .mobile-menu-close {
-    position: absolute;
+    /* position: fixed; */
     top: 50%;
     transform: translate(0, -50%);
 
