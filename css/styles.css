@@ -103,6 +103,7 @@ img {
 
 .nav-main {
     display: flex;
+    justify-content: flex-end;
 }
 
 .header-navigation {
@@ -187,49 +188,82 @@ img {
 }
 
 
+/* /=====================** Menu **=====================/ */
+
 .menu-btn-wrap {
     /* position: fixed; */
-    top: 0;
-    right: 0;
+    /* align-items: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* top: 0; */
+    /* right: 0; */
+    /* transform: translate(0, -50%); */
+    z-index: 100;
     width: 100%;
-
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.3);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-open {}
+.menu-btn-wrap {
+    /* visibility: visible; */
+    /* opacity: 0; */
+    /* pointer-events: none; */
+    /* transition-duration: 250ms; */
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
 
-.mobile-menu-close {}
+.mobile-menu-open:hover,
+.mobile-menu-open:focus {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+}
 
 .mobile-menu-open {
-    /* position: fixed; */
-    top: 50%;
-    transform: translate(0, -50%);
+    position: absolute;
+    align-items: center;
+    top: 0;
     right: 0;
-
-    margin-left: auto;
     background-color: transparent;
     border: none;
-    padding: 0;
+    /* padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 16px; */
     line-height: 0;
-    align-items: center;
 
+    /* transform: translate(-50%, 0); */
+    /* margin-left: auto; */
+    /* align-items: center; */
+}
+
+.menu-open-container {
+    display: flex;
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 16px;
+}
+
+.menu-close-container {
+    display: none;
+    /* padding-top: 23px; */
+    /* padding-bottom: 23px; */
+    /* padding-right: 16px; */
 }
 
 .mobile-menu-close {
     /* position: fixed; */
-    top: 50%;
-    transform: translate(0, -50%);
+    /* top: 50%; */
+    /* transform: translate(0, -50%); */
 
-    right: 0;
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
+    /* right: 0; */
+    /* margin-left: auto; */
+    /* background-color: transparent; */
+    /* border: none; */
+    /* padding: 0; */
+    /* line-height: 0; */
 }
-
-/* /=====================** Menu **=====================/ */
-
-
 
 
 /* /=====================** HERO **=====================/ */
@@ -739,8 +773,16 @@ footer {
 
     .header-container {
         width: 320px;
+        justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .nav-main {
+        position: relative;
+        padding-left: 16px;
+        padding-top: 23px;
+        padding-bottom: 23px;
     }
 
     .nav-address-wrap {
@@ -752,8 +794,8 @@ footer {
     }
 
     .menu-btn-wrap {
-        display: block;
-        margin-left: auto;
+        /* display: block; */
+        /* margin-left: auto; */
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Hero 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -947,7 +989,6 @@ footer {
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile 480px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header 480px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media screen and (min-width: 480px) {
@@ -966,8 +1007,8 @@ footer {
     }
 
     .menu-btn-wrap {
-        display: block;
-        margin-left: auto;
+        /* display: block; */
+        /* margin-left: auto; */
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Hero 480px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
