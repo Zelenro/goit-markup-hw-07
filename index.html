@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/test.css" />
     <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
@@ -66,7 +67,12 @@
           </div>
         </address>
 
-        <button type="button" class="button mobile-menu-open" openMenuBtn>
+        <button
+          type="button"
+          class="button mobile-menu-open menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="icon-menu-hamburger" width="32px" height="22px">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
@@ -75,10 +81,15 @@
         <!-- ====================================== MENU ========================= -->
 
         <div
-          class="container container-for-menu menu-wrap-container is-open"
-          mobileMenu
+          class="container container-for-menu menu-wrap-container menu-container js-menu-container"
+          id="mobile-menu"
         >
-          <button type="button" class="menu-close-btn" closeMenuBtn>
+          <button
+            type="button"
+            class="menu-toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="close-menu-btn-icon" width="8px" height="8px">
               <use href="./images/icons.svg#icon-close-menu"></use>
             </svg>
@@ -725,6 +736,12 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
