@@ -66,11 +66,15 @@ img {
 
 .header-container {
     display: flex;
-    position: relative;
+
     align-items: center;
-    line-height: 0;
+    /* line-height: 0; */
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.container-for-menu {
+    position: relative;
 }
 
 .logo-web {
@@ -200,47 +204,25 @@ img {
 
 /* /=====================** Menu **=====================/ */
 
-.menu-container {
+.menu-wrap-container {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(57, 124, 63, 0.5);
-    z-index: 100;
     top: 0;
     left: 0;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-container.is-hidden {
-    visibility: visible;
-    opacity: 0;
-    pointer-events: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-wrap-container {
-    position: relative;
-    /* width: 428px; */
-    /* height: 796px; */
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-top: 80px;
-    background-color: rgba(106, 73, 168, 0.5);
+    /* background-color: rgba(106, 73, 168, 0.5); */
+    background-color: #ffffff;
+    border: none;
 }
 
 .menu-close-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
     padding: 0;
-    background-color: transparent;
+    /* background-color: yellow; */
     border: 1px solid rgba(46, 47, 66, 0.1);
     border-radius: 50%;
     fill: #2E2F42;
@@ -249,100 +231,59 @@ img {
 }
 
 .menu-list {
-    position: static;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* min-width: 360px; */
     padding-top: 80px;
-    padding-bottom: 40px;
     padding-left: 40px;
-
-    border-bottom: none;
-    box-shadow: none;
-
-    /* display: flex; */
-    /* height: 100%; */
-    /* width: 100%; */
-    /* position: relative; */
+    padding-bottom: 40px;
+    /* padding-right: 35px; */
+    3
 }
 
 .contact-list-menu {
-    display: block;
-    position: static;
+    margin-bottom: 284px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
 }
 
-.menu-close-btn {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* border: none; */
-    /* width: 24px; */
-    /* height: 24px; */
-    /* padding: 0; */
-    /* transform: translate(-0px, 0px); */
-    /* padding-right: 16px; */
-    /* transform: translate(-0%, -50%); */
+.navigation-menu {
+    margin-bottom: 40px;
 }
 
-.close-menu-btn-icon {
-    /* position: absolute; */
-    /* width: 24px; */
-    /* height: 24px; */
-    /* transform: translate(-50%, -50%); */
-    /* fill: #404BBF; */
+.contact-menu {
+    /* padding-top: 284px; */
+    margin-bottom: 48px;
+
 }
 
-.menu-btn-wrap {
-    /* visibility: visible; */
-    /* opacity: 0; */
-    /* pointer-events: none; */
-    /* transition-duration: 250ms; */
-    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+.tel-menu {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4D5AE5;
 }
 
-.mobile-menu-open:hover,
-.mobile-menu-open:focus {
-    /* fill: #FFFFFF; */
-    /* background-color: #404BBF; */
+.mail-menu {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
-
-
-
-.header-container {}
-
-
-.menu-container {
-    /* position: fixed; */
-    /* width: 100%; */
-    /* height: 100%; */
-    /* background-color: burlywood; */
-    /* z-index: 100; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* display: none; */
-    /* transition-duration: 250ms; */
-    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-    /* padding: 30px; */
-    /* background-color: rgba(46, 47, 66, 0.1); */
+.social-media-list-menu {
+    display: flex;
+    gap: 56px;
 }
-
-.menu-wrap-container {
-    /* position: relative; */
-}
-
-.menu-close-btn {
-    /* position: absolute; */
-    /* top: 0; */
-    /* right: 0; */
-}
-
-.close-menu-btn-icon {}
-
-.menu-list {}
-
-
-
 
 
 /* /=====================** HERO **=====================/ */

@@ -24,7 +24,7 @@
     <!-- /* /=====================** Header **=====================/ */ -->
 
     <header>
-      <div class="header-container">
+      <div class="container-for-menu header-container">
         <nav class="nav-main">
           <div class="logo">
             <a class="link" href="./index.html"
@@ -66,62 +66,67 @@
           </div>
         </address>
 
-        <button type="button" class="button mobile-menu-open">
+        <button type="button" class="button mobile-menu-open" openMenuBtn>
           <svg class="icon-menu-hamburger" width="32px" height="22px">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
-      </div>
-    </header>
 
-    <!-- ====================================== MENU ========================= -->
+        <!-- ====================================== MENU ========================= -->
 
-    <div class="menu-container">
-      <div class="header-container menu-wrap-container">
-        <button type="button" class="menu-close-btn">
-          <svg class="close-menu-btn-icon" width="8px" height="8px">
-            <use href="./images/icons.svg#icon-close-menu"></use>
-          </svg>
-        </button>
-        <div class="menu-list">
-          <ul class="contact-list-menu">
-            <li>12345</li>
-            <li>54321</li>
-            <li>qwerty</li>
-          </ul>
-          <ul>
-            <li>TEL</li>
-            <li>E-MAIL</li>
-          </ul>
-          <ul class="link social-media-list">
-            <li class="media-list">
-              <a class="media-list-link" href="">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="media-list">
-              <a class="media-list-link" href="">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="media-list">
-              <a class="media-list-link" href="">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="media-list">
-              <a class="media-list-link" href="">
-                <svg class="footer-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+        <div
+          class="container container-for-menu menu-wrap-container"
+          mobileMenu
+        >
+          <button type="button" class="menu-close-btn" closeMenuBtn>
+            <svg class="close-menu-btn-icon" width="8px" height="8px">
+              <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-list">
+            <ul class="link contact-list-menu">
+              <li class="navigation-menu">Studio</li>
+              <li class="navigation-menu">Portfolio</li>
+              <li class="navigation-menu">Contacts</li>
+            </ul>
+            <ul class="link contact-menu">
+              <li class="tel-menu">
+                <a href="tel:+110001111111"></a>+11 (000) 111-11-11
+              </li>
+              <li class="mail-menu">
+                <a href="mailto:info@devstudio.com"></a> info@devstudio.com
+              </li>
+            </ul>
+            <ul class="link social-media-list-menu">
+              <li class="media-list">
+                <a class="media-list-link" href="">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="media-list">
+                <a class="media-list-link" href="">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="media-list">
+                <a class="media-list-link" href="">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="media-list">
+                <a class="media-list-link" href="">
+                  <svg class="footer-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- /* /=====================** HERO **==========================/ */ -->
 
