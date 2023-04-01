@@ -239,7 +239,7 @@ img {
     padding-left: 40px;
     padding-bottom: 40px;
     /* padding-right: 35px; */
-    3
+
 }
 
 .contact-list-menu {
@@ -257,6 +257,7 @@ img {
 }
 
 .contact-menu {
+    margin-top: auto;
     /* padding-top: 284px; */
     margin-bottom: 48px;
 
@@ -283,6 +284,10 @@ img {
 .social-media-list-menu {
     display: flex;
     gap: 56px;
+    /* margin-left: auto; */
+    margin-right: auto;
+    /* justify-content: space-between; */
+    padding-right: 60px;
 }
 
 
