@@ -249,6 +249,9 @@ img {
 
 }
 
+.menu-list {
+    margin-bottom: auto;
+}
 
 .footer-menu {
     display: flex;
@@ -268,7 +271,7 @@ img {
 }
 
 .tel-menu {
-    /* margin-top: auto; */
+    margin-top: auto;
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 36px;
