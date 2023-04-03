@@ -227,36 +227,8 @@ img {
     fill: #2E2F42;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* background-color: yellow; */
-
-    /* min-height: 24px;
-    min-width: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none; */
-
-
 }
 
-.menu-list {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* min-width: 360px; */
-    /* padding-top: 80px; */
-    /* padding-left: 40px; */
-    /* padding-bottom: 40px; */
-    /* padding-right: 35px; */
-
-}
 
 .contact-list-menu {
     /* margin-bottom: auto; */
