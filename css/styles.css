@@ -819,7 +819,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 427px) {
 
     .header-container {
         width: 320px;
@@ -1052,11 +1052,30 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
 
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 15px;
+        padding-right: 40px;
         padding-bottom: 0px;
-        padding-top: 0px;
+        padding-top: 40px;
+    }
 
+    .legend {
+        margin-bottom: 0;
+        max-width: 240px;
+        padding-left: 24px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+
+
+    .checkbox-form-wrapper {
+        position: relative;
+        display: block;
+        margin-bottom: 40px;
     }
 
 
@@ -1066,7 +1085,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile 480px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header 480px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
     .header-container {
         width: 428px;
         margin-left: auto;
@@ -1266,6 +1285,36 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Modal 428px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .modal {
+        width: 320px;
+        height: 584px;
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+        padding-top: 40px;
+    }
+
+    .legend {
+        margin-bottom: 0;
+        font-size: 16px;
+        max-width: 230px;
+    }
+
+    .checkbox-form-wrapper {
+        margin-bottom: 40px;
+    }
+
+
+    .legend {
+        padding-left: 22px;
+    }
+
+
+
+
 }
 
 
@@ -1489,6 +1538,27 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     .subscribe-btn {
         justify-content: start;
     }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Modal 768px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .modal {
+        width: 408px;
+        height: 586px;
+        padding-top: 72px;
+    }
+
+    .legend {
+        padding-top: 0px;
+        margin-bottom: 16px;
+        max-width: 350px;
+        padding-left: 0px;
+
+    }
+
+    .checkbox-form-wrapper {
+        margin-bottom: 24px;
+    }
+
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Desctop %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -2039,8 +2109,8 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 
 .modal {
     position: absolute;
-    width: 408px;
-    height: 584px;
+    /* width: 408px; */
+    /* height: 584px; */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -2051,7 +2121,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;
-    padding-top: 72px;
+    /* padding-top: 72px; */
 
 }
 
@@ -2091,7 +2161,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 }
 
 .legend {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -2178,7 +2248,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 .checkbox-form-wrapper {
     position: relative;
     display: block;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 
 }
 
