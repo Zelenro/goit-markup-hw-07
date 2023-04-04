@@ -66,6 +66,7 @@ img {
 
 .header-container {
     display: flex;
+    height: 72px;
 
     align-items: center;
     /* line-height: 0; */
@@ -1115,7 +1116,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         padding-top: 112px;
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-mobile/squoosh/hero-mobile@1x.jpg");
-        /* margin-bottom: 96px; */
+        margin-bottom: 96px;
     }
 
     .hero-title {
@@ -1130,7 +1131,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 
     .section-features {
         width: 428px;
-        /* margin-bottom: 96px; */
+        margin-bottom: 96px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -1374,6 +1375,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         height: 436px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-tablet/hero-tablet@1x.jpg");
         padding: 112px 0;
+        margin-bottom: 96px;
 
     }
 
@@ -1398,6 +1400,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         width: 768px;
         padding-left: 16px;
         padding-right: 16px;
+        margin-bottom: 96px;
     }
 
     .features-list {
@@ -1628,6 +1631,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         width: 1158px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 120px;
 
         padding-left: 15px;
         padding-right: 15px;
@@ -1637,7 +1641,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         display: flex;
         flex-wrap: nowrap;
         /* padding-top: 120px; */
-        padding-bottom: 120px;
+        /* padding-bottom: 120px; */
     }
 
     .features-box {
@@ -1694,7 +1698,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         width: 1158px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 120px;
+        /* padding-top: 120px; */
         padding-bottom: 120px;
         padding-left: 15px;
         padding-right: 15px;
