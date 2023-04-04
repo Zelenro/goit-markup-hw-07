@@ -290,6 +290,7 @@ img {
 
 .social-media-list-menu {
     display: flex;
+    max-width: 368px;
     /* gap: 56px; */
     /* margin-left: auto; */
     /* margin-right: auto; */
