@@ -219,12 +219,24 @@
           <h2 class="title-job">What are we doing</h2>
           <ul class="link work-list">
             <li class="work-item">
-              <img
-                class="reset-px"
-                src="./images/what-are-we-doing/jpeg/img1.jpg"
-                alt="Foto"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-are-we-doing/squoosh/img1@1x-1.jpg 1x,
+                    ./images/what-are-we-doing/squoosh/img1@2x-2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="reset-px"
+                  src="./images/what-are-we-doing/jpeg/img1.jpg"
+                  alt="Foto"
+                />
+              </picture>
             </li>
+
             <li class="work-item">
               <img
                 class="reset-px"

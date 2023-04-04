@@ -159,7 +159,7 @@ img {
 
 
 .contact-block {
-    padding-top: 16px;
+    /* padding-top: 16px; */
 }
 
 .address-section {
@@ -320,7 +320,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-text-hero);
     text-align: center;
-    max-width: 320px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -822,6 +822,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
 
     .header-container {
         width: 320px;
+        height: 70px;
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
@@ -857,7 +858,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         padding-top: 112px;
         padding-bottom: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/480.jpg");
-        /* margin-bottom: 96px; */
+        margin-bottom: 96px;
     }
 
     .hero-title {
@@ -882,7 +883,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     }
 
     .features-list {
-        padding-top: 96px;
+        /* padding-top: 96px; */
         padding-bottom: 96px;
     }
 
@@ -1078,7 +1079,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        max-width: 320px;
+        max-width: 330px;
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Features 480px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -1259,6 +1260,10 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         padding-right: 16px;
     }
 
+    .nav-main {
+        padding-right: 0;
+    }
+
     .nav-address-wrap {
         display: block;
     }
@@ -1294,7 +1299,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         width: 736px;
         height: 436px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/480.jpg");
-        padding: 0;
+        padding: 112px 0;
 
     }
 
@@ -1302,7 +1307,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
-        padding-top: 112px;
+        /* padding-top: 112px; */
 
         /* padding: 112px 36px; */
     }
@@ -1534,7 +1539,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     .features-list {
         display: flex;
         flex-wrap: nowrap;
-        padding-top: 120px;
+        /* padding-top: 120px; */
         padding-bottom: 120px;
     }
 
@@ -1616,6 +1621,11 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
         margin-right: 24px;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Work 1200px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .section-work {
+        display: block;
+    }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Team 1200px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
