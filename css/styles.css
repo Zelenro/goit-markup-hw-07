@@ -101,10 +101,6 @@ img {
     stroke: #2E2F42;
 }
 
-.nav-address-wrap {
-    /* position: relative; */
-}
-
 .nav-main {
     display: flex;
     justify-content: flex-end;
@@ -806,7 +802,7 @@ footer {
 screen and (min-resolution: 192dpi) and (min-width: 320px),
 screen and (min-resolution: 192dpi) and (min-width: 320px) {
     .hero {
-        background-image: url();
+        background-image: url(../images/hero/hero-mobile/squoosh/hero-mobile@1x.jpg);
     }
 }
 
@@ -834,8 +830,8 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     .nav-main {
         position: relative;
         padding-left: 16px;
-        padding-top: 23px;
-        padding-bottom: 23px;
+        /* padding-top: 23px; */
+        /* padding-bottom: 23px; */
     }
 
     .nav-address-wrap {
@@ -1268,7 +1264,7 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     }
 
     .contact-block {
-        display: block;
+        display: flex;
     }
 
     .menu-btn-wrap {
@@ -1284,7 +1280,8 @@ screen and (min-resolution: 192dpi) and (min-width: 320px) {
     }
 
     .contact-item {
-        margin-bottom: 12px;
+        /* align-items: center; */
+        /* margin-bottom: 12px; */
     }
 
     .menu-open-container {
