@@ -381,7 +381,7 @@ img {
     .footer {
         margin-left: auto;
         margin-right: auto;
-        width: 320px;
+        width: 120px;
     }
 
     .footer-list {
@@ -494,7 +494,7 @@ img {
 
     .subscribe-form {
         display: block;
-        width: 100%;
+        /* width: 100%; */
         outline: none;
         /* width: 264px; */
         height: 40px;
