@@ -372,6 +372,201 @@ img {
 
 
 
+    footer {
+        background-color: #2E2F42;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+    }
+
+    .footer-list {
+        margin: 0;
+    }
+
+    .footer-logo-link {
+        display: flex;
+        justify-content: center;
+        padding-top: 96px;
+        padding-bottom: 18px;
+    }
+
+    .footrer-logo-web {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #4D5AE5;
+    }
+
+    .footrer-logo-studio {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #F4F4FD;
+    }
+
+    .footer-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-text-foter);
+        padding-bottom: 72px;
+    }
+
+    .social-media-block {}
+
+    .social-media-list {
+        /* display: flex; */
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+
+    .social-media-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 24px;
+        padding-bottom: 72px;
+    }
+
+    .media-list {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .media-list:hover,
+    .media-list:focus {
+        background-color: #31D0AA;
+        fill: #404BBF;
+    }
+
+    .footer-icon {
+        justify-content: center;
+        align-items: center;
+        fill: #FFFFFF;
+    }
+
+    .form-subscribe-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-subscribe {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+
+    }
+
+    .subscribe-form {
+        display: block;
+        width: 100%;
+        outline: none;
+        /* width: 264px; */
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-right: 24px;
+        border: 1px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        /* padding-left: 16px; */
+        margin-bottom: 16px;
+
+    }
+
+    .form-subscribe-email {
+        display: inline-block
+    }
+
+
+    .subscribe-icon-wrapper {
+        position: relative;
+    }
+
+    .subscribe-icon {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(0, -50%);
+        fill: #FFFFFF;
+    }
+
+    .subscribe-btn {
+        width: 165px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background-color: #4D5AE5;
+        border-radius: 4px;
+        border: transparent;
+        margin: 40px 0px 0px 0px;
+        padding-left: 24px;
+    }
+
+    .subscribe-btn:hover,
+    .subscribe-btn:focus {
+        background-color: var(--color-button-hover);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile 428px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -598,6 +793,15 @@ img {
             gap: 24px;
             padding-bottom: 120px;
         }
+
+        .customers-block {
+            width: 1158px;
+        }
+
+        .customers-list {
+            flex-wrap: nowrap;
+        }
+
 
 
     }
