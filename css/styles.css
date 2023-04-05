@@ -66,19 +66,22 @@ img {
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-@media screen and (min-width: 320px) and (max-width: 427px) {
+@media screen and (min-width: 320px) {
 
     .header-container {
+        position: relative;
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
         width: 320px;
         height: 70px;
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 24px;
         padding-bottom: 24px;
-        /* justify-content: space-between; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
+        border-bottom: 1px solid #E7E9FC;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
     }
 
     .logo-web {
@@ -122,4 +125,179 @@ img {
     }
 
 
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HERO 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .hero {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 96px;
+        height: auto;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-desktop/squoosh/hero-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--color-text-hero);
+        text-align: center;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: var(--color-button-normal);
+        border-color: transparent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 88px;
+        padding: 16px 32px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .hero-button:hover,
+    .hero-button:focus {
+        background-color: var(--color-button-hover);
+    }
+
+    .features-box {
+        display: none;
+    }
+
+    .section-features {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding-right: 16px; */
+        /* padding-left: 16px; */
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .features-item {
+        width: 288px;
+    }
+
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile 428px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (min-width: 428px) {
+    .header-container {
+        width: 428px;
+    }
+
+    .hero {
+        width: 428px;
+    }
+
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLET 768px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        width: 768px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 120px;
+    }
+
+    .nav-main {
+        display: flex;
+    }
+
+    .header-navigation {
+        display: flex;
+        gap: 40px;
+    }
+
+
+    .nav-address-wrap {
+        display: block;
+
+    }
+
+    .contact-block {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .header-container {
+        width: 768px;
+    }
+
+    .hero {
+        width: 768px;
+    }
+
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DESCTOP 1158px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (min-width: 1158px) {
+    .header-container {
+        width: 1158px;
+    }
+
+    .hero {
+        width: 1158px;
+    }
+
+    .contact-block {
+        top: 24px;
+        right: 16px;
+    }
+
+    .contact-list {
+        display: flex;
+        gap: 40px;
+    }
+
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DESCTOP 1440px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (min-width: 1440px) {
+    .header-container {
+        width: 1440px;
+    }
+
+    .hero {
+        width: 1440px;
+    }
 }
