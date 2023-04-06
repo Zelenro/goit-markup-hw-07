@@ -60,6 +60,8 @@ img {
 
 .reset-px {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile 320px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -80,14 +82,6 @@ img {
     .header-container {
         position: relative;
         display: flex;
-        /* margin: 0; */
-        /* padding: 0; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* width: 320px; */
-        /* height: 70px; */
-        /* padding-left: 16px; */
-        /* padding-right: 16px; */
         padding-top: 24px;
         padding-bottom: 24px;
         border-bottom: 1px solid #E7E9FC;
@@ -194,11 +188,11 @@ img {
     }
 
     .section-features {
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 16px;
-        padding-left: 16px;
+        /* width: 320px; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* padding-right: 16px; */
+        /* padding-left: 16px; */
     }
 
     .features-list {
@@ -224,21 +218,20 @@ img {
 
     .team-block {
         display: block;
-        width: 320px;
-        margin-right: auto;
-        margin-left: auto;
+        /* width: 320px; */
+        /* margin-right: auto; */
+        /* margin-left: auto; */
     }
 
     .team-item {
-        width: 264px;
+        /* width: 264px; */
         background: #FFFFFF;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 72px;
+        /* margin-right: auto; */
+        /* margin-left: auto; */
     }
 
     .team-title {
@@ -247,7 +240,10 @@ img {
     }
 
     .team-block-list {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        gap: 72px;
 
     }
 
@@ -350,6 +346,10 @@ img {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         margin-right: auto;
         margin-left: auto;
+
+    }
+
+    .customers-organisation:not(:last-child) {
         margin-bottom: 24px;
     }
 
@@ -386,9 +386,7 @@ img {
         margin: 0;
     }
 
-    .footer-logo {
-        padding-top: 96px;
-    }
+    .footer-logo {}
 
     .footer-logo-link {
         display: flex;
@@ -471,7 +469,7 @@ img {
     }
 
     .form-subscribe-wrapper {
-        width: 288px;
+        /* width: 288px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -562,6 +560,10 @@ img {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mobile 428px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+
     .header-container {
         width: 428px;
     }
@@ -594,6 +596,10 @@ img {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLET 768px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
     .header-container {
         width: 768px;
         justify-content: space-between;
@@ -760,6 +766,11 @@ img {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DESCTOP 1158px %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+
+    }
+
     .header-container {
         width: 1158px;
     }
