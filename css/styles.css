@@ -67,16 +67,27 @@ img {
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Header 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media screen and (min-width: 320px) {
+    .container {
+        width: 288px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
 
     .header-container {
         position: relative;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        width: 320px;
-        height: 70px;
-        padding-left: 16px;
-        padding-right: 16px;
+        /* margin: 0; */
+        /* padding: 0; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* width: 320px; */
+        /* height: 70px; */
+        /* padding-left: 16px; */
+        /* padding-right: 16px; */
         padding-top: 24px;
         padding-bottom: 24px;
         border-bottom: 1px solid #E7E9FC;
@@ -128,14 +139,12 @@ img {
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HERO 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
+
+
     .hero {
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 96px;
+        width: 100%;
         height: auto;
-        padding-top: 112px;
-        padding-bottom: 112px;
+
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/hero-desktop/squoosh/hero-desktop@1x.jpg");
         background-repeat: no-repeat;
         background-position: center;
@@ -190,7 +199,6 @@ img {
         margin-right: auto;
         padding-right: 16px;
         padding-left: 16px;
-        margin-bottom: 96px;
     }
 
     .features-list {
@@ -231,19 +239,16 @@ img {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 72px;
-
-
     }
 
     .team-title {
         text-align: center;
-        padding-top: 96px;
         margin-bottom: 72px;
     }
 
     .team-block-list {
         justify-content: center;
-        padding-bottom: 96px;
+
     }
 
     .team-foto-title {
