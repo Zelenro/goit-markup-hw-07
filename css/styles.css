@@ -691,7 +691,7 @@ img {
     }
 
     .footer {
-        width: 768px;
+        width: 736px;
         display: flex;
         flex-wrap: wrap;
         margin: 0;
@@ -846,7 +846,7 @@ img {
     }
 
     .footer {
-        width: 1158px;
+        width: 1126px;
         flex-wrap: nowrap;
         padding-top: 96px;
     }
