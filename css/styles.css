@@ -379,6 +379,13 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container-for-menu.is-open {
+    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .contact-list-menu {
     /* margin-bottom: auto; */
