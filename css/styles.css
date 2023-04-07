@@ -60,7 +60,280 @@ img {
 
 .reset-px {
     display: block;
+    width: 100%;
 }
+
+
+
+/* ######################################## Backdrop ###################################### */
+
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    /* padding-top: 72px; */
+
+}
+
+.modal-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    fill: #2E2F42;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+}
+
+/* ######################################## Form ###################################### */
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.legend {
+    /* margin-bottom: 24px; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.label-form {
+    color: #2E2F42;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+
+}
+
+.form-imput-title {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+
+.contact-form-wrapper {
+    position: relative;
+}
+
+.contact-form-imput {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.contact-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
+    fill: #2E2F42;
+}
+
+.contact-form-imput:focus {
+    outline: none;
+    border-color: #4D5AE5;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-imput:focus+.contact-icon {
+    fill: #4D5AE5;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2E2F42;
+}
+
+.contact-form-massage {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px 8px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    resize: none;
+    color: #2E2F42;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+
+.contact-form-massage:focus {
+    outline: none;
+    border-color: #4D5AE5;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2E2F42;
+}
+
+.checkbox-form-wrapper {
+    position: relative;
+    display: block;
+    /* margin-bottom: 24px; */
+
+}
+
+.check-input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+/* .check-box {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect x="0.5" y="0.5" width="15" height="15" rx="1.5" stroke="%232E2F42" stroke-opacity="0.4"/%3E%3C/svg%3E');
+}
+
+.check-input:checked+.check-box {
+    background-image: url(../svg/on.svg);} */
+
+
+.off-input {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    fill: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+
+}
+
+.on-input {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    /* background: #404BBF; */
+    /* border: 1px solid #404BBF; */
+    /* border-radius: 2px; */
+}
+
+
+.check-input~.off-input {
+    display: block;
+}
+
+.check-input:checked~.off-input {
+    display: none;
+}
+
+.check-input~.on-input {
+    display: none;
+}
+
+.check-input:checked~.on-input {
+    display: block;
+}
+
+
+
+.privat-policy-check {
+    position: absolute;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.privat-policy {
+    color: #4D5AE5;
+    text-decoration-line: underline;
+}
+
+.btn-send-wrap {
+    display: flex;
+    margin-top: 48px;
+}
+
+.send-btn {
+    width: 169px;
+    height: 56px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    background-color: var(--color-button-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 
 
@@ -158,11 +431,21 @@ img {
     .mobile-menu-open {
         position: absolute;
         background-color: transparent;
-        top: 24px;
-        right: 16px;
+        /* top: 24px; */
+        right: 15px;
         border: none;
     }
 
+
+
+    .modal {
+        position: absolute;
+        width: calc(100% - 30px);
+        height: 586px;
+        left: 50%;
+        top: 50%;
+        padding-top: 64px;
+    }
 
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HERO 320px @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -267,7 +550,7 @@ img {
     }
 
     .team-item {
-        /* width: 264px; */
+
         background: #FFFFFF;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -625,6 +908,11 @@ img {
         margin: 0;
     }
 
+    .modal {
+        width: 392px;
+        height: 586px;
+        padding-top: 72px;
+    }
 
 
 }
@@ -930,3 +1218,6 @@ img {
 
 
 }
+
+
+/
