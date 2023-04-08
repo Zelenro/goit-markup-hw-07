@@ -48,7 +48,7 @@ ol {
 }
 
 .text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -443,7 +443,6 @@ img {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #434455;
-
     }
 
     .social-media-list-menu {
@@ -451,8 +450,6 @@ img {
         max-width: 368px;
         justify-content: space-between;
     }
-
-
 
 
     .container {
@@ -578,7 +575,7 @@ img {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../images/hero/hero-dmt/hero-mobile@2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-dmt/hero-mobile@2x.jpg);
         }
     }
 
@@ -634,16 +631,24 @@ img {
     .title-features {
         display: flex;
         justify-content: center;
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: 8px;
-        font-size: 20px;
-        line-height: 1.2;
+        font-size: 36px;
+        line-height: 1.1;
         letter-spacing: 0.02em;
         color: #2E2F42;
     }
 
+    .text-features {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
     .section-work {
         display: none;
+        padding-top: 0;
     }
 
     .title-job {
@@ -666,7 +671,6 @@ img {
     }
 
     .team-item {
-
         background: #FFFFFF;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -1024,6 +1028,7 @@ img {
 
     .customers-organisation {
         margin: 0;
+
     }
 
     .modal {
@@ -1130,8 +1135,11 @@ img {
         font-weight: 700;
     }
 
-    .text {
+    .text-features {
         font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 
 
@@ -1148,6 +1156,7 @@ img {
     .title-features {
         justify-content: start;
     }
+
 
     .team-section {
         background-color: #F4F4FD;
@@ -1174,6 +1183,10 @@ img {
         gap: 72px 24px;
     }
 
+    .customers-organisation {
+        width: 168px;
+    }
+
     .footer {
         display: flex;
         flex-wrap: wrap;
@@ -1181,7 +1194,7 @@ img {
         margin: 0;
         padding-bottom: 96px;
         width: 768px;
-        padding-left: 75px;
+        padding-left: 108px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1290,14 +1303,27 @@ img {
         width: 264px;
     }
 
-    .title-job {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
+    .title-features {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
-        color: var(--color-text-title);
-        text-align: center;
-        margin-bottom: 72px;
+    }
+
+    .title-job {
+        /* font-weight: 500; */
+        /* font-size: 20px; */
+        /* line-height: 1.12; */
+
+        /* text-align: center; */
+        /* margin-bottom: 72px; */
+    }
+
+    .text-features {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 
     .section-work {
